@@ -16,7 +16,14 @@ package lab;
  */
 public class Specs {
 
-    // TODO ข้อ 4: เขียน JavaDoc ให้เมธอดนี้
+    
+    /**
+     * ฟังก์ชั่นนี้ทำการค้นหาตำแหน่งแรกที่เจอค่า key ในอาเรย์ arr
+     * @param arr อาเรย์ที่ถูกค้นหา
+     * @param key ค่าที่ค้นหา
+     * @return ตำแหน่งที่เจอ ถ้าไม่เจอจะส่ง -1
+     * @throws IllegalArgumentException ถ้า arr เป็น null
+     */
     public static int firstIndexOf(int[] arr, int key) {
         if (arr == null) throw new IllegalArgumentException("arr must not be null");
         for (int i = 0; i < arr.length; i++)
